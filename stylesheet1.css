@@ -11900,7 +11900,7 @@ h4 {
 
 @media (max-width:767.98px) {
     h4 {
-        font-size: 2.4rem;
+        font-size: 3rem;
         line-height: 3rem
     }
 }
@@ -22236,9 +22236,9 @@ h2.news-item__title a:hover {
 
 @media (max-width:767.98px) {
     .people__contact-details-col .people__contact-details-value {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 2.1rem;
-        margin-bottom: 2.6rem
+        margin-bottom: 3.6rem
     }
 }
 
@@ -22327,8 +22327,8 @@ h2.news-item__title a:hover {
 
 @media (max-width:767.98px) {
     .people__affiliated-labs {
-        margin-top: 6rem;
-        padding: 5rem 0 4rem
+        margin-top: 2rem;
+        padding: 0rem 0 4rem
     }
 }
 
