@@ -12041,8 +12041,8 @@ dl dd {
 }
 
 .gutenberg-body h5 {
-    margin-top: 4.5rem;
-    margin-bottom: 2.7rem
+    margin-top: 5rem;
+    margin-bottom: 2rem
 }
 
 @media (max-width:767.98px) {
@@ -22024,13 +22024,13 @@ h2.news-item__title a:hover {
 }
 
 .people__contact-wrapper-inner {
-    background-color: #bbdefb;
-    color: white;
-    padding: 8rem calc(((60% - 36rem)/10) + 5rem) 3rem
+    background-color: #004d90;
+    color: #FFF;
+    padding: 4rem calc(((75% - 36rem)/10) + 5rem) 3rem
 }
 
 .people__contact-wrapper-inner h2 {
-    color: #002748;
+    color: #fff;
     font-family: "Barlow Condensed", Helvetica, Arial, sans-serif;
     font-size: 3.6rem;
     font-weight: 400;
@@ -22097,7 +22097,7 @@ h2.news-item__title a:hover {
 }
 
 .people__contact-details-col h3.people__contact-details-label {
-    color: #002748;
+    color: #FFF;
     font-family: "Barlow Condensed", Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -22116,7 +22116,7 @@ h2.news-item__title a:hover {
 }
 
 .people__contact-details-col .people__contact-details-value {
-    color: #002748;
+    color: #fff;
     font-family: "Roboto Mono", "Courier New", Arial, sans-serif;
     font-size: 2rem;
     font-weight: 400;
@@ -22143,7 +22143,12 @@ h2.news-item__title a:hover {
 }
 
 .people__contact-details-col .people__contact-details-value a {
-    color: #002748;
+    color: #fff;
+    text-decoration: none
+}
+
+.people__contact-details-col .people__contact-details-value h4 {
+    color: #fff;
     text-decoration: none
 }
 
