@@ -11,112 +11,7 @@
     <link type="text/css" media="screen" href="stylesheet1.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        /* Previous CSS remains the same */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-        }
-
-        .gallery-container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .gallery-slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .slide {
-            min-width: 100%;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .slide img {
-            width: 100%;
-            height: 600px;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-        }
-
-        /* Modified Caption Style */
-        .caption {
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            color: white;
-            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.5));
-            padding: 10px;
-            border-radius: 0 0 5px 5px;
-            text-align: center;
-            font-size: 1.8rem;
-            backdrop-filter: blur(2px);
-        }
-
-        /* Rest of the CSS remains the same */
-        .nav-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(255, 255, 255, 0.61);
-            border: none;
-            padding: 15px;
-            cursor: pointer;
-            border-radius: 25%;
-            font-size: 2rem;
-            transition: background-color 0.3s;
-            z-index: 2;
-        }
-
-        .nav-button:hover {
-            background-color: rgba(255,255,255,1);
-        }
-
-        .prev {
-            left: 20px;
-        }
-
-        .next {
-            right: 20px;
-        }
-
-        .indicators {
-            position: absolute;
-            bottom: 80px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
-            z-index: 2;
-        }
-
-        .indicator {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: rgba(255,255,255,0.5);
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .indicator.active {
-            background-color: rgba(255,255,255,1);
-        }
-    </style>
-    <title>Sangram Krishna Nirmale IIT AeroAstro</title>
+    <title>Sangram Krishna Nirmale IIT Bombay</title>
 </head>
 
 <body class="people-template-default single single-people postid-2576 wp-embed-responsive tribe-no-js tribe-theme-aero-astro" data-template="base.twig">
@@ -124,9 +19,9 @@
 
     <header class="header">
         <div class="header__wrapper">
-               <!-- sticky-nav -->
-                <div id="sticky-main-nav" class="main-nav--wrapper d-none d-lg-block">
-                <!-- main-nav -->
+            <!-- sticky-nav -->
+            <div id="sticky-main-nav" class="main-nav--wrapper d-none d-lg-block">
+                      <!-- main-nav -->
                 <div class="container">
                     <div class="row1">
                         <div class="col-12">
@@ -157,7 +52,7 @@
                                     <li class="has-submenu level-1"><a href="#section2"><h2>Project</h2></a>
                                     </li>
 
-                                    <li class="has-submenu level-1"><a href="#section8"><h2>gallery</h2></a>
+                                    <li class="has-submenu level-1"><a href="gallery.html"><h2>gallery</h2></a>
                                     </li>
 
                                     <li class="has-submenu level-1"><a href="#section7"><h2>Contact</h2></a>
@@ -217,7 +112,7 @@
                     <div class="mobile-menu-wrapper__main-nav">
                         <ul class="navbar-nav mobile-menu">
 
-                            <li class="has-submenu"><a href="#"><h2>Home</h2></a>
+                            <li class="has-submenu"><a href="index.html"><h2>Home</h2></a>
                             </li>
 
                             <li class="has-submenu"><a href="#section1"><h2>About</h2></a>
@@ -241,7 +136,7 @@
                             <li class="has-submenu"><a href="#section2"><h2>Project</h2></a>
                             </li>
 
-                            <li class="has-submenu"><a href="#section8"><h2>gallery</h2></a>
+                            <li class="has-submenu"><a href="gallery.html"><h2>gallery</h2></a>
                             </li>
 
                             <li class="has-submenu"><a href="#section7"><h2>Contact</h2></a>
@@ -803,7 +698,7 @@
                                                         <td>2024 to till date</td>
                                                     </tr>
                                                 </tbody>
-                                            </table>   <br><br>
+                                            </table> 
                                         </li>
                                         
                                     </ul> 
@@ -812,30 +707,6 @@
                         </div>
                        </div>
                     </div>
-
-
-
-                    <span id="section8"></span>
-                    <!-- Gallery-->
-                    <div  class="gutenberg-body gutenberg-body--person people__awards2" >
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-lg-12 offset-lg-0">
-                                    <h4  class="personh text-center" >GALLERY</h4>
-                                    <div class="gallery-container">
-                                        <div class="gallery-slider">
-                                            <!-- Slides will be inserted here by JavaScript -->
-                                        </div>
-                                        <button class="nav-button prev">❮</button>
-                                        <button class="nav-button next">❯</button>
-                                        <div class="indicators"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br><br>
-                        </div >
-                    </div>
-
 
 
                     <span id="section7"></span>
@@ -927,97 +798,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        // Dummy data for gallery
-        const galleryData = [
-            {
-                image: "a.jpg",  // Update with your image path
-                 caption: "Cube Seminar"
-               
-            },
-            
-            {
-                image: "c.jpg",
-               caption: "Cube Seminar"
-               
-            },
-            {
-                image: "d.jpeg",
-                caption: 'Agent Based Modeling Workshop IIM Kozhikode'
-               
-            },
-            {
-                image: "e.jpg",
-                
-            },
-            {
-                image: "g.jpg",
-                
-            },
-            {
-                image: "h.jpg",
-                caption: 'advanced travel demand model using emerging data structure'
-                
-            },
-            {
-                image: "i.jpg",
-                caption: "Cube Seminar"
-               
-            }
-        ];
-
-        // Initialize gallery
-        const slider = document.querySelector('.gallery-slider');
-        const indicators = document.querySelector('.indicators');
-        let currentIndex = 0;
-
-        // Create slides
-        galleryData.forEach((item, index) => {
-            const slide = document.createElement('div');
-            slide.className = 'slide';
-            slide.innerHTML = `
-                <img src="${item.image}" alt="Gallery Image ${index + 1}">
-                <div class="caption">${item.caption}</div>
-            `;
-            slider.appendChild(slide);
-
-            // Create indicators
-            const indicator = document.createElement('div');
-            indicator.className = 'indicator' + (index === 0 ? ' active' : '');
-            indicator.addEventListener('click', () => goToSlide(index));
-            indicators.appendChild(indicator);
-        });
-
-        // Navigation functions
-        function updateSlider() {
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-            document.querySelectorAll('.indicator').forEach((ind, index) => {
-                ind.classList.toggle('active', index === currentIndex);
-            });
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % galleryData.length;
-            updateSlider();
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + galleryData.length) % galleryData.length;
-            updateSlider();
-        }
-
-        function goToSlide(index) {
-            currentIndex = index;
-            updateSlider();
-        }
-
-        // Event listeners
-        document.querySelector('.next').addEventListener('click', nextSlide);
-        document.querySelector('.prev').addEventListener('click', prevSlide);
-
-        // Auto-advance (optional)
-        // setInterval(nextSlide, 5000);
-    </script>
     <script type="text/javascript" src="custom.js?ver=6.7.2" id="customjs-js"></script>
 </body>
 </html>
