@@ -13428,7 +13428,7 @@ blockquote.wp-block-quote {
 }
 
 blockquote.wp-block-quote .container {
-    padding-right: 4rem;
+    padding-right: qrem;
     padding-left: 4rem
 }
 
