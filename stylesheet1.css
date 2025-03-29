@@ -410,7 +410,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-    margin-bottom: 1.6rem;
+    margin-bottom: 4.6rem;
    
     font-weight: 400;
     line-height: 1.2
@@ -12056,8 +12056,8 @@ dl dd {
 }
 
 .gutenberg-body h4 {
-    margin-top: 2rem;
-    margin-bottom: 4rem
+    margin-top: 4rem;
+    margin-bottom: 6rem
 }
 
 @media (max-width:1079.98px) {
@@ -12132,13 +12132,13 @@ dl dd {
 .gutenberg-body ol:not(.footnotes) li:before {
     display: inline-block;
     color: #004d90;
-    border: solid 1px #48a2d0;
+    border: solid 1.5px #48a2d0;
     border-radius: 50%;
     width: 4.2rem;
     height: 4.2rem;
     font-weight: 700;
     text-align: left;
-    content: "0" counter(item) ".";
+    content:  counter(item) ".";
     position: absolute;
     left: -5.5rem;
     top: -.5rem;
@@ -22356,7 +22356,7 @@ h2.news-item__title a:hover {
 
 
 .people__awards {
-    background-color: #673ab770;
+    background-color: #c5aeea;
     padding: 5rem 0 7rem
 }
 @media (max-width:1079.98px) {
@@ -22493,7 +22493,7 @@ h2.news-item__title a:hover {
     line-height: 4.3rem;
     letter-spacing: 3.6px;
     text-transform: capitalize;
-    margin-bottom: 7.5rem
+    margin-top: 7.5rem
 }
 
 @media (max-width:1079.98px) {
@@ -22829,7 +22829,7 @@ h2.news-item__title a:hover {
 
 
 .people__awards4 {
-    background-color: #fff;
+    background-color:#ffa64d;
 
     padding: 0rem 0 0rem
     
