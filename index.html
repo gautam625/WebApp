@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+        /* Previous CSS remains the same */
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +21,7 @@
 
         body {
             font-family: Arial, sans-serif;
-           
+            background-color: #f0f0f0;
         }
 
         .gallery-container {
@@ -39,37 +40,45 @@
         .slide {
             min-width: 100%;
             position: relative;
+            overflow: hidden;
         }
 
         .slide img {
             width: 100%;
-            height: 500px;
+            height: 600px;
             object-fit: cover;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
         }
 
+        /* Modified Caption Style */
         .caption {
             position: absolute;
-            bottom: 20px;
-            left: 20px;
-          
-           
-            padding: 10px 20px;
-            border-radius: 4px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            color: white;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.5));
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            text-align: center;
+            font-size: 1.8rem;
+            backdrop-filter: blur(2px);
         }
 
+        /* Rest of the CSS remains the same */
         .nav-button {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background-color: rgba(255,255,255,0.8);
+            background-color: rgba(255, 255, 255, 0.61);
             border: none;
-            padding: 30px;
+            padding: 15px;
             cursor: pointer;
-            border-radius: 50%;
-            font-size: 1.2rem;
-            transition: background-color 2s;
+            border-radius: 25%;
+            font-size: 2rem;
+            transition: background-color 0.3s;
+            z-index: 2;
         }
 
         .nav-button:hover {
@@ -86,11 +95,12 @@
 
         .indicators {
             position: absolute;
-            bottom: 20px;
+            bottom: 80px;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
-            gap: 10px;
+            gap: 20px;
+            z-index: 2;
         }
 
         .indicator {
@@ -162,28 +172,30 @@
                                                                                                   
                             
 
+
+                                    <li class="list-inline-item mx-0">
+                                        <a href="https://www.linkedin.com/in/sangram-nirmale/" target="_blank">
+                                          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="28">
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="list-inline-item mx-1">
+                                        <a href="https://scholar.google.co.in/citations?user=CEZSh60AAAAJ&hl=en" target="_blank">
+                                          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" width="28">
+                                        </a>
+                                    </li>
+                                    
                                     <li class="list-inline-item mx-0">
                                          <a href="https://www.researchgate.net/profile/Sangram-Nirmale" target="_blank">
                                           <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" width="28">
                                         </a>
                                       </li>
-                                      <li class="list-inline-item mx-1">
-                                        <a href="https://www.linkedin.com/in/sangram-nirmale/" target="_blank">
-                                          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="28">
-                                        </a>
-                                      </li>
 
-                                      <li class="list-inline-item mx-0">
+                                      <li class="list-inline-item mx-1">
                                         <a href="https://orcid.org/0000-0001-7930-8195" target="_blank">
                                             <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID" width="28">
                                         </a>
-                                    </li>
-                                    
-                                      <li class="list-inline-item mx-1">
-                                        <a href="https://scholar.google.co.in/citations?user=CEZSh60AAAAJ&hl=en" target="_blank">
-                                          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" width="28">
-                                        </a>
-                                      </li>
+                                    </li>      
                                 </ul>       
                             </nav>                            
                         </div>
@@ -202,7 +214,6 @@
 						    <span class="menu-btn__close"></span>
 				</button>
             </div>
-
             <div id="mobile-navigation" class="mobile-navigation d-lg-none">
                 <div class="mobile-menu-wrapper">
                     <div class="mobile-menu-wrapper__main-nav">
@@ -251,7 +262,6 @@
 
                 
                     <!-- Home-->
-                     
                     <div class="person-header person-header--large-image" >
                         <div class="container">
                             <div class="row">
@@ -277,8 +287,6 @@
 
 
                     <span id="section1"></span>
-
-
                     <!-- About Me -->
                     <div class="gutenberg-body gutenberg-body--person" >
                         <div class="alignfull tiles-container"> 
@@ -286,7 +294,7 @@
                             <div class="row">                                  
                                 <div class="col-12 col-lg-11 offset-lg-1">                                  
                                     <ul class="wp-block-list">
-                                        <h4  class="personh text-center" >About Me</h4>
+                                        <h4  class="personh text-center" >About me</h4>
                                         <h2>Education</h2> 
                                         <li><h5>Ph.D. | Indian Institute of Science, Bengaluru |2016-2022|</h5></li>
                                         <table class="table table-borderless table-sm">
@@ -386,58 +394,8 @@
                        </div>
                     </div>
                     
-                    <span id="section2"></span>
-
-                     <!-- Project -->
-
-                     <div class="gutenberg-body gutenberg-body--person people__awards3" >
-                       <div class="alignfull tiles-container2"> 
-                        <div class="container">
-                            <div class="row">      
-                                <div class="col-12 col-lg-11 offset-lg-0">                  
-                                    <ul class="wp-block-list">
-                                        <h4  class="personh text-center" >PROJECTS</h4>
-                                        <li><h5>Sponsored Research Projects</h5>
-                                            <table class="table table-bordered">
-                                                <thead>
-                                                    <tr>
-                                                      <th>Project Title</th>
-                                                      <th>Funding Agency</th>
-                                                      <th>Role</th>
-                                                      <th >Funding Amount</th>
-                                                      <th>Duration</th>
-                                                    </tr>
-                                                </thead>
-    
-                                                <tbody>
-                                                    <tr>
-                                                        <td >Advancing Behavioural Realism in Activity-Based Travel Demand Models through Incorporating Socio-Psychological Influences and Perception Error Modelling</td>
-                                                        <td>Anusandhan National Research Foundation (ANRF), Government of India</td>
-                                                        <td>PI</td>
-                                                        <td> ~ ₹ 5 Million</td>
-                                                        <td>Accepted for funding but not started yet</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Developing a Context-Sensitive Accessibility Evaluation Model for First and Last-Mile Connectivity for Pedestrians and Bicyclists Around Transit Stations in Mumbai</td>
-                                                        <td>IIT Bombay research hub for Green Energy and Sustainability Research Hub </td>
-                                                        <td>PI</td>
-                                                        <td> ~ ₹ 2.5 Million</td>
-                                                        <td>2024 to till date</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>   <br><br>
-                                        </li>
-                                        
-                                    </ul> 
-                                </div>
-                            </div>
-                        </div>
-                       </div>
-                    </div>
-
 
                     <span id="section3"></span>
-
                     <!--PUBLICATIONS-->
                     <div  class="gutenberg-body gutenberg-body--person people__awards2" >
                         <div class="container">
@@ -494,7 +452,6 @@
 
 
                     <span id="section9"></span>
-
                     <!-- TEACHING -->
                     <div class="section">
                         <div  class="gutenberg-body gutenberg-body--person people__awards4" >
@@ -502,7 +459,7 @@
                                 <div class="row">
                                     
                                     <div class="col-12 col-lg-12 offset-lg-0"><br>
-                                        <h4 class="personh text-center" >TEACHING</h4><br>
+                                        <h4 class="personh text-center" >TEACHING</h4>
                                         <ul class="wp-block-list">  
                                             <h2>PG courses and lab at IIT Bombay</h2>
                                             <ol>
@@ -521,65 +478,65 @@
                         </div>  
                     </div>
 
-                    <span id="section4"></span>
 
-                    <!-- OUTREACH -->
-                    <div class="section5">
-                        <div  class="gutenberg-body gutenberg-body--person people__awards1" >
-                                <div class="container">
-                                                    <div class="row">
-                                                        
-                                                        <div class="col-12 col-lg-12 offset-lg-0">
-                                                            <h4 class="personh text-center" >OUTREACH</h4><br>
-                                                            <ul class="wp-block-list">  
-                                                                <h2>Professional Courses / Workshops Organized</h2>   
-                                                                <ol>                                                
-                                                                    <li><p>The international workshop on Advancing Travel Demand Models Using Emerging Data Sources was organised on 18 November 2024 and was sponsored by the Institution of Eminence (IoE), IIT Bombay. </p></li>  
-                                                                    
-                                                                    <h2>Invited Talks</h2>
-                    
-                                                                    <li><p>National Workshop on Integrating Artificial Intelligence and FinTech Solutions in Transportation and Healthcare at NIT Mizoram, Aizawl, Mizoram. September 2024. </p>
-                                                                    <i>Delivered a lecture on Exploring the Critical Data Needs for Travel Demand Modelling in AI-Enhanced Transportation Planning.</i></li>
-                    
-                                                                    <li><p>A Short Course on Advanced Choice Modelling Methods with Applications in Transportation and Urban Systems organised by the Centre for Continuing Education (CCE) at the Indian Institute of Science (IISc) Bengaluru. August 2024</p>
-                                                                    <i> Delivered several lectures on choice modelling and led tutorial sessions on estimating statistical models using GAUSS software. </i></li>
-                                                                
-                                                                    <li><p> Summer School Open Stack – Recent Advances in Urban Transportation Systems and Planning organised by GISE Hub at IIT Bombay.July 2024.</p>
-                                                                    <i> Delivered several lectures on mode choice modelling and activity-based travel demand models. Additionally, I conducted tutorial sessions on estimating statistical models with R software, as well as tutorials on creating road networks and traffic analysis zones using QGIS. </i></li>
-                                                                
-                                                                    <li><p> Faculty Development Program on Contemporary Civil Engineering organised by the Department of Civil Engineering at D Y Patil College of Engineering and Technology Kolhapur. June 2024. </p>
-                                                                    <i> Gave a guest lecture on ‘The Crucial Role of Travel Demand Modelling in City Planning. </i></li>
-                                                                
-                                                                    <li><p> SERB-Sponsored High-End Workshop on Inferential Statistics & Regression Techniques for Data Analytics and Modelling in Research at Visvesvaraya National Institute of Technology, Nagpur. December 2022.</p>
-                                                                    <i> Gave a guest lecture on choice modelling theory and led tutorial sessions on estimating statistical models using R software </i></li>
-                                                                
-                                                                    <li><p>SPARC-Sponsored Workshop on Advanced Choice Modelling Methods in an Evolving Urban Travel Behaviour Landscape at Indian Institute of Science, Bengaluru. February 2020. </p>
-                                                                    <i> Assisted with preparing course material, gave a few theory lectures, and led tutorial sessions on estimating statistical models using GAUSS software </i></li>
-                                                                                                        
-                                                                    <li><p>Discrete Choice Theory and Modelling Applications in Transportation  at Indian Institute of Science, Bengaluru. July 2018.  </p>
-                                                                    <i> Led tutorial sessions on estimating statistical models using R software</i></li>
-                                                                </ol>
-                                                                <h2>Professional Service</h2>
-                                                                <ol>                                                       
-                                                                    <li>Scientific committee head for the 15th International Conference on Transportation Planning and Implementation Methodologies for Developing Countries (TPMDC)</li>
-                                                                    <li>Reviewer for the following journals</li>         
-                                                                </ol> 
-                                                                <ul>
-                                                                    <li>Transportation Research Part B: Methodological</li>
-                                                                    <li>Transportation Research Part B: Methodological</li>
-                                                                    <li>Transportation Research Record</li>
-                                                                    <li>Transportation Letters</li>
-                                                                    <li>Transportation in Developing Economies</li>
-                                                                </ul>   
-                                                            </ul>
-                                                        </div>
-                                                    </div>
+                    <span id="section6"></span>
+                     <!--Awards and Achievements-->
+                    <div class="people__awards" >         
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-lg-12 offset-lg-1">
+                                    <h4 class="personh text-center">AWARDS AND ACHIEVEMENTS</h4>
+                                    <div class="people__awards-wrapper">
+                                        <div class="people__awards-award">
+                                            <div class="people__awards-award-year"><span>2024</span></div>
+
+                                            <div class="people__awards-award-title">Young Faculty Award by Indian Institute of Technology Bombay</div>
+                                        </div>
+                                        <div class="people__awards-award">
+                                            <div class="people__awards-award-year"><span>2023 </span></div>
+
+                                            <div class="people__awards-award-title">Best Thesis Award in the traffic engineering area by the Transportation Research Group of India (TRG India)</div>
+                                        </div>
+                                        <div class="people__awards-award">
+                                            <div class="people__awards-award-year"><span>2022</span></div>
+
+                                            <div class="people__awards-award-title">Best Presentation award in Sustainable Transport Planning, Policies and Emerging Technologies Track at 14th Conference on Transportation Planning and Implementation Methodologies for Developing Countries (TPMDC-2022) for the paper titled “The adverse impact of headway variability on Bus Transit Ridership: Evidence from Bengaluru, India”. Note: I made this presentation</div>
+                                        </div>
+                                        <div class="people__awards-award">
+                                            <div class="people__awards-award-year"><span>2022 </span></div>
+
+                                            <div class="people__awards-award-title">Best Paper award in the 14th Conference on Transportation Planning and Implementation Methodologies for Developing Countries (TPMDC-2022) for the paper titled “The adverse impact of headway variability on Bus Transit Ridership: Evidence from Bengaluru, India”. Note: I was a co-author on this paper.</div>
+                                        </div>
+                                        <div class="people__awards-award">
+                                            <div class="people__awards-award-year"><span>2021</span></div>
+
+                                            <div class="people__awards-award-title">Best paper award in Planning and Demand Modelling Track at 6th Conference of Transportation Research Group of India (CTRG-2021) for the paper titled “A direct demand model of bus transit ridership considering spatial disaggregation, demand-supply endogeneity, non-linear service response, accessibility measures, and inter-route relationships”. Note: I was a co-author on this paper.</div>
+                                        </div>
+                                        <div class="people__awards-award">
+                                            <div class="people__awards-award-year"><span>2021 </span></div>
+
+                                            <div class="people__awards-award-title">Awarded with COMSNETS Fellowship for 2021 issued by International Conference on COMmunication Systems and NETworkS (COMSNETS). </div>
+                                        </div>
+                                        <div class="people__awards-award">
+                                            <div class="people__awards-award-year"><span>2019 </span></div>
+
+                                            <div class="people__awards-award-title">Best paper award in Traffic Flow Analysis and Facilities Design Track at 5th Conference of Transportation Research Group of India (CTRG-2019) for the paper titled “Driver Behaviour Models with Perception Errors: A choice Modelling Framework with Stochastic Variables”. Note: I was a lead author on this paper.</div>
+                                        </div>
+                                        <div class="people__awards-award">
+                                            <div class="people__awards-award-year"><span>2019</span></div>
+
+                                            <div class="people__awards-award-title">First rank in the exam conducted during the AICTE-sponsored short-term training program “Modelling and Control of Traffic under Mixed Conditions” organised by the Department of Civil Engineering, IIT Madras, from 2nd to 7th December 2019.</div>
+                                        </div>
+                                    </div>
                                 </div>
-                        </div>  
+                            </div>
+                        </div >
+                       </div> 
                     </div>
 
+
+
                     <span id="section5"></span>
-                    
                     <!--Team Members-->
                     <div class="gutenberg-body gutenberg-body--tile-layout" >
                         <div class="container" >
@@ -752,62 +709,114 @@
                         </div>
                     </div>
 
-                   
-                    <span id="section6"></span>
+
+
+                    <span id="section4"></span>
+                    <!-- OUTREACH -->
+                    <div class="section5">
+                        <div  class="gutenberg-body gutenberg-body--person people__awards1" >
+                                <div class="container">
+                                                    <div class="row">
+                                                        
+                                                        <div class="col-12 col-lg-12 offset-lg-0">
+                                                            <h4 class="personh text-center" >OUTREACH</h4>
+                                                            <ul class="wp-block-list">  
+                                                                        <h2>Professional Courses / Workshops Organized</h2>
+                                                                <ol>
+                                                                    <li><p>The international workshop on Advancing Travel Demand Models Using Emerging Data Sources was organised on 18 November 2024 and was sponsored by the Institution of Eminence (IoE), IIT Bombay. </p></li>  
+                                                                </ol>
+                                                                        <h2>Invited Talks</h2>   
+                                                                <ol>                                                     
+                                                                    <li><p>National Workshop on Integrating Artificial Intelligence and FinTech Solutions in Transportation and Healthcare at NIT Mizoram, Aizawl, Mizoram. September 2024. </p>
+                                                                    <i>Delivered a lecture on Exploring the Critical Data Needs for Travel Demand Modelling in AI-Enhanced Transportation Planning.</i></li>
                     
-                     <!--Awards and Achievements-->
-                    <div class="people__awards" >         
+                                                                    <li><p>A Short Course on Advanced Choice Modelling Methods with Applications in Transportation and Urban Systems organised by the Centre for Continuing Education (CCE) at the Indian Institute of Science (IISc) Bengaluru. August 2024</p>
+                                                                    <i> Delivered several lectures on choice modelling and led tutorial sessions on estimating statistical models using GAUSS software. </i></li>
+                                                                
+                                                                    <li><p> Summer School Open Stack – Recent Advances in Urban Transportation Systems and Planning organised by GISE Hub at IIT Bombay.July 2024.</p>
+                                                                    <i> Delivered several lectures on mode choice modelling and activity-based travel demand models. Additionally, I conducted tutorial sessions on estimating statistical models with R software, as well as tutorials on creating road networks and traffic analysis zones using QGIS. </i></li>
+                                                                
+                                                                    <li><p> Faculty Development Program on Contemporary Civil Engineering organised by the Department of Civil Engineering at D Y Patil College of Engineering and Technology Kolhapur. June 2024. </p>
+                                                                    <i> Gave a guest lecture on ‘The Crucial Role of Travel Demand Modelling in City Planning. </i></li>
+                                                                
+                                                                    <li><p> SERB-Sponsored High-End Workshop on Inferential Statistics & Regression Techniques for Data Analytics and Modelling in Research at Visvesvaraya National Institute of Technology, Nagpur. December 2022.</p>
+                                                                    <i> Gave a guest lecture on choice modelling theory and led tutorial sessions on estimating statistical models using R software </i></li>
+                                                                
+                                                                    <li><p>SPARC-Sponsored Workshop on Advanced Choice Modelling Methods in an Evolving Urban Travel Behaviour Landscape at Indian Institute of Science, Bengaluru. February 2020. </p>
+                                                                    <i> Assisted with preparing course material, gave a few theory lectures, and led tutorial sessions on estimating statistical models using GAUSS software </i></li>
+                                                                                                        
+                                                                    <li><p>Discrete Choice Theory and Modelling Applications in Transportation  at Indian Institute of Science, Bengaluru. July 2018.  </p>
+                                                                    <i> Led tutorial sessions on estimating statistical models using R software</i></li>
+                                                                </ol>
+                                                                <h2>Professional Service</h2>
+                                                                <ol>                                                       
+                                                                    <li>Scientific committee head for the 15th International Conference on Transportation Planning and Implementation Methodologies for Developing Countries (TPMDC)</li>
+                                                                    <li>Reviewer for the following journals</li>         
+                                                                </ol> 
+                                                                <ul>
+                                                                    <li>Transportation Research Part B: Methodological</li>
+                                                                    <li>Transportation Research Part B: Methodological</li>
+                                                                    <li>Transportation Research Record</li>
+                                                                    <li>Transportation Letters</li>
+                                                                    <li>Transportation in Developing Economies</li>
+                                                                </ul>   
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                </div>
+                        </div>  
+                    </div>
+
+
+
+                    <span id="section2"></span>
+                     <!-- Project -->
+                     <div class="gutenberg-body gutenberg-body--person people__awards3" >
+                       <div class="alignfull tiles-container2"> 
                         <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-lg-12 offset-lg-1">
-                                    <h4 class="personh text-center">AWARDS  AND  ACHIEVEMENTS</h4> 
-                                    <div class="people__awards-wrapper">
-                                        <div class="people__awards-award">
-                                            <div class="people__awards-award-year"><span>2024</span></div>
-
-                                            <div class="people__awards-award-title">Young Faculty Award by Indian Institute of Technology Bombay</div>
-                                        </div>
-                                        <div class="people__awards-award">
-                                            <div class="people__awards-award-year"><span>2023 </span></div>
-
-                                            <div class="people__awards-award-title">Best Thesis Award in the traffic engineering area by the Transportation Research Group of India (TRG India)</div>
-                                        </div>
-                                        <div class="people__awards-award">
-                                            <div class="people__awards-award-year"><span>2022</span></div>
-
-                                            <div class="people__awards-award-title">Best Presentation award in Sustainable Transport Planning, Policies and Emerging Technologies Track at 14th Conference on Transportation Planning and Implementation Methodologies for Developing Countries (TPMDC-2022) for the paper titled “The adverse impact of headway variability on Bus Transit Ridership: Evidence from Bengaluru, India”. Note: I made this presentation</div>
-                                        </div>
-                                        <div class="people__awards-award">
-                                            <div class="people__awards-award-year"><span>2022 </span></div>
-
-                                            <div class="people__awards-award-title">Best Paper award in the 14th Conference on Transportation Planning and Implementation Methodologies for Developing Countries (TPMDC-2022) for the paper titled “The adverse impact of headway variability on Bus Transit Ridership: Evidence from Bengaluru, India”. Note: I was a co-author on this paper.</div>
-                                        </div>
-                                        <div class="people__awards-award">
-                                            <div class="people__awards-award-year"><span>2021</span></div>
-
-                                            <div class="people__awards-award-title">Best paper award in Planning and Demand Modelling Track at 6th Conference of Transportation Research Group of India (CTRG-2021) for the paper titled “A direct demand model of bus transit ridership considering spatial disaggregation, demand-supply endogeneity, non-linear service response, accessibility measures, and inter-route relationships”. Note: I was a co-author on this paper.</div>
-                                        </div>
-                                        <div class="people__awards-award">
-                                            <div class="people__awards-award-year"><span>2021 </span></div>
-
-                                            <div class="people__awards-award-title">Awarded with COMSNETS Fellowship for 2021 issued by International Conference on COMmunication Systems and NETworkS (COMSNETS). </div>
-                                        </div>
-                                        <div class="people__awards-award">
-                                            <div class="people__awards-award-year"><span>2019 </span></div>
-
-                                            <div class="people__awards-award-title">Best paper award in Traffic Flow Analysis and Facilities Design Track at 5th Conference of Transportation Research Group of India (CTRG-2019) for the paper titled “Driver Behaviour Models with Perception Errors: A choice Modelling Framework with Stochastic Variables”. Note: I was a lead author on this paper.</div>
-                                        </div>
-                                        <div class="people__awards-award">
-                                            <div class="people__awards-award-year"><span>2019</span></div>
-
-                                            <div class="people__awards-award-title">First rank in the exam conducted during the AICTE-sponsored short-term training program “Modelling and Control of Traffic under Mixed Conditions” organised by the Department of Civil Engineering, IIT Madras, from 2nd to 7th December 2019.</div>
-                                        </div>
-                                    </div>
+                            <div class="row">      
+                                <div class="col-12 col-lg-11 offset-lg-0">                  
+                                    <ul class="wp-block-list">
+                                        <h4  class="personh text-center" >PROJECTS</h4>
+                                        <li><h5>Sponsored Research Projects</h5>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                      <th>Project Title</th>
+                                                      <th>Funding Agency</th>
+                                                      <th>Role</th>
+                                                      <th >Funding Amount</th>
+                                                      <th>Duration</th>
+                                                    </tr>
+                                                </thead>
+    
+                                                <tbody>
+                                                    <tr>
+                                                        <td >Advancing Behavioural Realism in Activity-Based Travel Demand Models through Incorporating Socio-Psychological Influences and Perception Error Modelling</td>
+                                                        <td>Anusandhan National Research Foundation (ANRF), Government of India</td>
+                                                        <td>PI</td>
+                                                        <td> ~ ₹ 5 Million</td>
+                                                        <td>Accepted for funding but not started yet</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Developing a Context-Sensitive Accessibility Evaluation Model for First and Last-Mile Connectivity for Pedestrians and Bicyclists Around Transit Stations in Mumbai</td>
+                                                        <td>IIT Bombay research hub for Green Energy and Sustainability Research Hub </td>
+                                                        <td>PI</td>
+                                                        <td> ~ ₹ 2.5 Million</td>
+                                                        <td>2024 to till date</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>   <br><br>
+                                        </li>
+                                        
+                                    </ul> 
                                 </div>
                             </div>
-                        </div >
-                       </div> 
+                        </div>
+                       </div>
                     </div>
+
+
 
                     <span id="section8"></span>
                     <!-- Gallery-->
@@ -829,6 +838,7 @@
                             <br><br>
                         </div >
                     </div>
+
 
 
                     <span id="section7"></span>
@@ -885,33 +895,34 @@
                 <div class="col-12 col-lg-3 offset-lg-0">
                     <img src="iit2.png" alt="" typeof="foaf:Image">
                 </div>
-
+                
                 <div class="col-12 col-lg-3 offset-lg-6">
-                    <p class="personh text-center"><strong>Contact Media Inquiries</strong></p>
-                    <div class="footer__social">
+                    <div class="footer__social"><br>
                             <nav class="nav">
-                                <li class="list-inline-item mx-0">
-                                    <a href="https://www.researchgate.net/profile/Sangram-Nirmale" target="_blank">
-                                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" width="35">
-                                    </a>
-                                  </li>
-                                  <li class="list-inline-item mx-3">
+                                <li class="list-inline-item mx-1">
                                     <a href="https://www.linkedin.com/in/sangram-nirmale/" target="_blank">
                                       <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="35">
                                     </a>
                                   </li>
 
-                                  <li class="list-inline-item mx-1">
-                                    <a href="https://orcid.org/0000-0001-7930-8195" target="_blank">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID" width="35">
-                                    </a>
-                                </li>
-                                
                                   <li class="list-inline-item mx-2">
                                     <a href="https://scholar.google.co.in/citations?user=CEZSh60AAAAJ&hl=en" target="_blank">
                                       <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" width="35">
                                     </a>
                                   </li>
+                                  
+                                <li class="list-inline-item mx-2">
+                                    <a href="https://www.researchgate.net/profile/Sangram-Nirmale" target="_blank">
+                                      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg" alt="ResearchGate" width="35">
+                                    </a>
+                                  </li>
+                                 
+
+                                  <li class="list-inline-item mx-1">
+                                    <a href="https://orcid.org/0000-0001-7930-8195" target="_blank">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/ORCID_iD.svg" alt="ORCID" width="35">
+                                    </a>
+                                </li> 
                             </nav>
                     </div>
                 </div>    
@@ -923,15 +934,18 @@
         const galleryData = [
             {
                 image: "a.jpg",  // Update with your image path
+                 caption: "Cube Seminar"
                
             },
             
             {
                 image: "c.jpg",
+               caption: "Cube Seminar"
                
             },
             {
                 image: "d.jpeg",
+                caption: 'Agent Based Modeling Workshop IIM Kozhikode'
                
             },
             {
@@ -948,6 +962,7 @@
             },
             {
                 image: "i.jpg",
+                caption: "Cube Seminar"
                
             }
         ];
