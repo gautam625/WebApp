@@ -22235,12 +22235,12 @@ h2.news-item__title a:hover {
 }
 
 .people__contact-details-col .people__contact-details-value {
-    color: #fff;
-    font-family: "Roboto Mono", "Courier New", Arial, sans-serif;
-    font-size: 2rem;
+    font-family: "Barlow Condensed", Helvetica, Arial, sans-serif;
+    color:#ffffffbf;
+    font-size: 1.6rem;
     font-weight: 400;
-    line-height: 2.8rem;
-    margin-bottom: 3rem
+    line-height: 3.5rem;
+    margin-bottom: 3.5rem
 }
 
 @media (max-width:767.98px) {
