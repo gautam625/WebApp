@@ -334,9 +334,7 @@
                 <article class="news-card">
                     <div class="card-image">
                         <div class="card-image-carousel">
-                            <img src="image7.png" alt="News image1" class="carousel-item active">
-                            <img src="image7.1.jpeg" alt="News image2" class="carousel-item">
-                            <img src="image7.3.jpg" alt="News image2" class="carousel-item">
+                            <img src="image7.3.jpg" alt="News image1" class="carousel-item active">
                         </div> 
                         <span class="card-date">5 APR 2025</span>   
                     </div>
@@ -445,7 +443,7 @@
                 items[currentIndex].classList.remove('active');
                 currentIndex = (currentIndex + 1) % items.length;
                 items[currentIndex].classList.add('active');
-            }, 2000); // Change image every 1000ms (1 second)
+            }, 1500); // Change image every 1000ms (1 second)
         }
 
         // Initialize all carousels
