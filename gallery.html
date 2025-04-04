@@ -231,36 +231,28 @@
             </div>
             <div class="gallery-item">
                 <img src="image3.jpg" alt="Dummy Image 3" onclick="openLightbox(this, 'In a Workshop on Advancing Travel Demand Modeling using Emerging Data Sources.')">
-                <div class="caption">In a Workshop on Advancing Travel Demand Modeling using Emerging Data Sources.
+                <div class="caption">A Workshop on Advancing Travel Demand Modeling using Emerging Data Sources.
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="image4.jpg" alt="Dummy Image 4" onclick="openLightbox(this, 'An insightful session by Prof. Prateek Bansal at the workshop on Advancing Travel Demand Modeling using eEmerging Data Sources.')">
+                <img src="image4.jpg" alt="Dummy Image 4" onclick="openLightbox(this, 'An insightful session by Prof. Prateek Bansal at the workshop on Advancing Travel Demand Modeling using Emerging Data Sources.')">
                 <div class="caption">An insightful session by Prof. Prateek Bansal at the workshop on Advancing Travel Demand Modeling using Emerging Data Sources.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="image8.jpg" alt="Dummy Image 4" onclick="openLightbox(this, 'Prime Minister Early Career Research Grant')">
+                <div class="caption">Prime Minister Early Career Research Grant</div>
             </div>
             <div class="gallery-item">
                 <img src="image5.jpg" alt="Dummy Image 4" onclick="openLightbox(this, 'Workshop on OpenPaths AGENT.')">
                 <div class="caption">Workshop on OpenPaths AGENT.</div>
             </div>
             <div class="gallery-item">
-                <img src="image6.jpeg" alt="Dummy Image 4" onclick="openLightbox(this, 'Met Prof. Tarun Rambha during the Agent-Based Travel Demand Modeling workshop, organized by IIM Kozhikode')">
+                <img src="image6.jpeg" alt="Dummy Image 4" onclick="openLightbox(this, 'Met Prof. Tarun Rambha during the Agent-Based Travel Demand Modeling Workshop, organized by IIM Kozhikode')">
                 <div class="caption">Met Prof. Tarun Rambha (IISC, Bengaluru) during the Agent-Based Travel Demand Modeling workshop, organized by IIM Kozhikode</div>
             </div>
         </div>
-        <div class="lightbox" onclick="closeLightbox()">
-            <img id="lightbox-img" src="" alt="">
-            <div class="caption" id="lightbox-caption"></div>
-        </div>
-        <script>
-            function openLightbox(img, caption) {
-                document.getElementById('lightbox-img').src = img.src;
-                document.getElementById('lightbox-caption').innerText = caption;
-                document.querySelector('.lightbox').classList.add('active');
-            }
-            function closeLightbox() {
-                document.querySelector('.lightbox').classList.remove('active');
-            }
-        </script>
+       
+       
     </section>
    
 
@@ -307,5 +299,21 @@
     </footer>
 
     <script type="text/javascript" src="custom.js?ver=6.7.2" id="customjs-js"></script>
+
+    <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="">
+        <div class="caption" id="lightbox-caption"></div>
+    </div>
+
+    <script>
+        function openLightbox(img, caption) {
+            document.getElementById('lightbox-img').src = img.src;
+            document.getElementById('lightbox-caption').innerText = caption;
+            document.querySelector('.lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.querySelector('.lightbox').classList.remove('active');
+        }
+    </script>
 </body>
 </html>
