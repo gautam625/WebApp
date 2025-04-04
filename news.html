@@ -65,16 +65,29 @@
             transform: translateY(-5px);
         }
 
+        /* Image Carousel Styles */
         .card-image {
             position: relative;
             height: 200px;
             overflow: hidden;
         }
 
-        .card-image img {
+        .card-image-carousel {
+            position: relative;
+            height: 100%;
+        }
+
+        .carousel-item {
+            position: absolute;
             width: 100%;
             height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
             object-fit: cover;
+        }
+
+        .carousel-item.active {
+            opacity: 1;
         }
 
         .card-date {
@@ -85,8 +98,10 @@
             padding: 8px 15px;
             font-weight: 600;
             color: #2d3748;
+            z-index: 1;
         }
 
+        /* Content Styles */
         .card-content {
             padding: 25px;
         }
@@ -318,12 +333,16 @@
                 <!-- News Card 1 -->
                 <article class="news-card">
                     <div class="card-image">
-                        <img src="image7.png" alt="News image">
-                        <span class="card-date">5 APR 2025</span>
+                        <div class="card-image-carousel">
+                            <img src="image7.png" alt="News image1" class="carousel-item active">
+                            <img src="image7.1.jpeg" alt="News image2" class="carousel-item">
+                            <img src="image7.3.jpg" alt="News image2" class="carousel-item">
+                        </div> 
+                        <span class="card-date">5 APR 2025</span>   
                     </div>
                     <div class="card-content">
                         <span class="card-category news">News</span>
-                        <p class="card-excerpt">Prof. Sangram Krishna Nimale, from the Department of Civil Engineering, Indian Institute of Technology Bombay received the Anusandhaan National Research Fellowship (ANRF) in 2025.</p>
+                        <p class="card-excerpt">Prof. Sangram Krishna Nimale, from the Department of Civil Engineering, Indian Institute of Technology Bombay received Prime Minister Early Career Research Grant by Anusandhaan National Research Fellowship (ANRF) in 2025.</p>
                         <div class="card-meta">
                             <span class="card-location"><i class="fas fa-map-marker-alt"></i> IIT bombay, Maharashtra</span>
                         </div>
@@ -333,7 +352,11 @@
                 <!-- Event Card 2 -->
                 <article class="news-card">
                     <div class="card-image">
-                        <img src="image5.jpg" alt="Event image">
+                        <div class="card-image-carousel">
+                            <img src="image5.jpg" alt="Event image1" class="carousel-item active">
+                            <img src="image5.1.jpeg" alt="News image2" class="carousel-item">
+                            <img src="image5.2.jpg" alt="News image3" class="carousel-item">
+                        </div>
                         <span class="card-date">5 FEB 2025</span>
                     </div>
                     <div class="card-content">
@@ -344,25 +367,29 @@
                         </div>
                     </div>
                 </article>
-    
+
                 <!-- News Card 3 -->
                 <article class="news-card">
                     <div class="card-image">
-                        <img src="image3.jpg" alt="News image">
-                        <span class="card-date">18 NOV 2024</span>
-                    </div>
+                        <div class="card-image-carousel">
+                            <img src="image3.jpg" alt="News image1" class="carousel-item active">
+                            <img src="image4.jpg" alt="News image2" class="carousel-item">
+                            <img src="image4.2.jpg" alt="News image3" class="carousel-item">
+                        </div> 
+                        <span class="card-date">18 NOV 2024</span>   
+                    </div>           
                     <div class="card-content">
-                        <span class="card-category news">News</span>
+                        <span class="card-category event">News</span>
                         <p class="card-excerpt">Organised an International Workshop on Advancing Travel Demand Modeling using Emerging Data Sources, with sessions taken by  Prof. Prateek Bansal (NUS, Singapore), Prof. Amit Agrawal (IIT Roorkee), and Prof. Arnab Jana (IIT Bombay) on 18th November 2024.</p>
                         <div class="card-meta">
                             <span class="card-location"><i class="fas fa-map-marker-alt"></i> IIT bombay, Maharashtra</span>
                         </div>
                     </div>
                 </article>
+            </section>
+                
             </div>
         </section>
-       
-       
     </section>
    
 
@@ -407,6 +434,25 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Carousel functionality
+        function startCarousel(carousel) {
+            const items = carousel.querySelectorAll('.carousel-item');
+            let currentIndex = 0;
+            
+            setInterval(() => {
+                items[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % items.length;
+                items[currentIndex].classList.add('active');
+            }, 2000); // Change image every 1000ms (1 second)
+        }
+
+        // Initialize all carousels
+        document.querySelectorAll('.card-image-carousel').forEach(carousel => {
+            startCarousel(carousel);
+        });
+    </script>
 
     <script type="text/javascript" src="custom.js?ver=6.7.2" id="customjs-js"></script>
 </body>
